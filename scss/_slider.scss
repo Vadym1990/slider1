@@ -1,0 +1,40 @@
+.slider {
+    /* Укажите здесь ширину слайдера */
+    // overflow: hidden;
+}
+
+.slider__imgs {
+    display: flex;
+    transition: transform 1s ease-in-out;
+    position: relative;
+    width: 1200px;
+    left: 300px;
+    /* Плавный переход в течение 1 секунды */
+}
+
+.slider-img {
+    width: 400px;
+    position: absolute;
+    opacity: 0;
+    transition: 1s;
+    left: 400px;
+    /* Укажите здесь ширину каждого слайда */
+}
+
+.slider-img2 {
+    transform: translateX(100%);
+}
+
+.slider-img4 {
+    transform: translateX(-100%);
+}
+
+.slider-img_active {
+    opacity: 1;
+}
+
+.slider__manage {
+    position: absolute;
+    top: 250px;
+    left: 50px;
+}

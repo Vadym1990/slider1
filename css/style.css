@@ -1,0 +1,152 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 15px;
+}
+
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.logo {
+  width: 70px;
+  height: 70px;
+  cursor: pointer;
+}
+
+header > div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 0 50px;
+}
+
+.nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style-type: none;
+  gap: 0 50px;
+  text-transform: uppercase;
+  font-family: "Poppins", sans-serif;
+}
+
+.nav > li > a {
+  text-decoration: none;
+  color: rgb(119, 119, 119);
+}
+
+.my-acc {
+  position: relative;
+}
+
+.my-acc-btn {
+  border-radius: 100px;
+  border: 2px solid #063D9C;
+  color: white;
+  text-transform: uppercase;
+  padding: 12px 25px 10px;
+  background-color: #063D9C;
+  font-family: "Raleway", sans-serif;
+  font-size: 14px;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 0 10px;
+}
+
+.login {
+  padding: 10px 0;
+  color: #39426F;
+  font-family: "Poppins", sans-serif;
+  position: absolute;
+  top: 110%;
+  left: 0;
+  padding-left: 25px;
+  border: 1px solid silver;
+  border-radius: 4px;
+  width: 100%;
+  text-align: left;
+  opacity: 0;
+  -webkit-transition: opacity 0.3s;
+  transition: opacity 0.3s;
+  -webkit-box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
+          box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
+  text-decoration: none;
+  z-index: 99;
+}
+
+.login_active {
+  opacity: 1;
+  background-color: white;
+}
+
+.slider {
+  /* Укажите здесь ширину слайдера */
+}
+
+.slider__imgs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-transition: -webkit-transform 1s ease-in-out;
+  transition: -webkit-transform 1s ease-in-out;
+  transition: transform 1s ease-in-out;
+  transition: transform 1s ease-in-out, -webkit-transform 1s ease-in-out;
+  position: relative;
+  width: 1200px;
+  left: 300px;
+  /* Плавный переход в течение 1 секунды */
+}
+
+.slider-img {
+  width: 400px;
+  position: absolute;
+  opacity: 0;
+  -webkit-transition: 1s;
+  transition: 1s;
+  left: 400px;
+  /* Укажите здесь ширину каждого слайда */
+}
+
+.slider-img2 {
+  -webkit-transform: translateX(100%);
+      -ms-transform: translateX(100%);
+          transform: translateX(100%);
+}
+
+.slider-img4 {
+  -webkit-transform: translateX(-100%);
+      -ms-transform: translateX(-100%);
+          transform: translateX(-100%);
+}
+
+.slider-img_active {
+  opacity: 1;
+}
+
+.slider__manage {
+  position: absolute;
+  top: 250px;
+  left: 50px;
+}/*# sourceMappingURL=style.css.map */

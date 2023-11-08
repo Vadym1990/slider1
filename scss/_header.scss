@@ -1,0 +1,79 @@
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 15px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between
+}
+
+.logo {
+    width: 70px;
+    height: 70px;
+    cursor: pointer;
+}
+
+header>div {
+    display: flex;
+    align-items: center;
+    gap: 0 50px;
+}
+
+.nav {
+    display: flex;
+    list-style-type: none;
+    gap: 0 50px;
+    text-transform: uppercase;
+    font-family: 'Poppins', sans-serif;
+}
+
+.nav>li>a {
+    text-decoration: none;
+    color: rgb(119, 119, 119);
+}
+
+.my-acc {
+    position: relative;
+}
+
+.my-acc-btn {
+    border-radius: 100px;
+    border: 2px solid #063D9C;
+    color: white;
+    text-transform: uppercase;
+    padding: 12px 25px 10px;
+    background-color: #063D9C;
+    font-family: 'Raleway', sans-serif;
+    font-size: 14px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 0 10px;
+}
+
+
+.login {
+    padding: 10px 0;
+    color: #39426F;
+    font-family: 'Poppins', sans-serif;
+    position: absolute;
+    top: 110%;
+    left: 0;
+    padding-left: 25px;
+    border: 1px solid silver;
+    border-radius: 4px;
+    width: 100%;
+    text-align: left;
+    opacity: 0;
+    transition: opacity .3s;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, .175);
+    text-decoration: none;
+    z-index: 99;
+}
+
+.login_active {
+    opacity: 1;
+    background-color: white;
+}
